@@ -418,5 +418,6 @@ header {
 
 .card-link .under-card {
 	border: 0.5px solid #f4f4fd;
+	border-top: none;
 	padding-left: 16px;
 }
