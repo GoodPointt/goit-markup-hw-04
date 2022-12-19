@@ -276,14 +276,19 @@ header {
 	padding-bottom: 0;
 }
 
-.grey-bg {
-	width: 264px;
+.feature-item::before {
+	content: "";
+	display: block;
+
 	height: 112px;
-	left: 0px;
-	top: 0px;
+	padding: 24px 100px;
 	margin-bottom: 8px;
-	background: var(--secondary-color);
+	background-image: url(../images/antenna.png);
 	border-radius: 4px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: var(--secondary-color);
 }
 
 /* WORK */
