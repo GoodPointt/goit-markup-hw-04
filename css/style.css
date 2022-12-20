@@ -370,10 +370,13 @@ header {
 	background-position: center;
 	background-repeat: no-repeat;
 }
-
-.social-link.inst {
-	background-image: url(../images/inst.svg);
+.social-icon {
+	fill: var(--bg-color);
 }
+
+/* .social-link.inst {
+	background-image: url(../images/inst.svg);
+} */
 .social-link.twt {
 	background-image: url(../images/twitter.svg);
 }
@@ -391,15 +394,19 @@ header {
 }
 
 .custumers-link {
-	display: flex;
-	padding: 44px 84px;
+	display: inline-flex;
+	padding: 16px 32px;
 	border: 1px solid #8e8f99;
 	border-radius: 4px;
+	fill: #8e8f99;
+}
 
-	background-position: center;
-	background-repeat: no-repeat;
+.custumer-svg {
+}
 
-	background-image: url(../images/client1.svg);
+.custumers-link:hover {
+	fill: var(--accent-color);
+	border-color: var(--accent-color);
 }
 
 /* FOOTER */
