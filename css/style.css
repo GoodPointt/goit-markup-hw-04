@@ -359,13 +359,13 @@ header {
 	background-color: var(--btn-hover-color);
 }
 
-/* CUSTUMERS */
-.custumers-list {
+/* CUSTOMERS */
+.customers-list {
 	display: flex;
 	gap: 24px;
 }
 
-.custumers-link {
+.customers-link {
 	display: inline-flex;
 	padding: 16px 32px;
 	border: 1px solid #8e8f99;
@@ -373,8 +373,8 @@ header {
 	fill: #8e8f99;
 }
 
-.custumers-link:hover,
-.custumers-link:focus {
+.customers-link:hover,
+.customers-link:focus {
 	fill: var(--accent-color);
 	border-color: var(--accent-color);
 }
