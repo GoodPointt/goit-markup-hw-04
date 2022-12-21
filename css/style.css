@@ -7,6 +7,7 @@
 	--bg-color: #ffffff;
 	--secondary-color: #f4f4fd;
 	--btn-hover-color: #404bbf;
+	--sechover-color: #31d0aa;
 }
 body {
 	font-family: "Roboto", sans-serif;
@@ -40,6 +41,7 @@ ol {
 	list-style: none;
 	padding-left: none;
 	margin: 0;
+	padding: 0;
 }
 a {
 	text-decoration: none;
@@ -70,7 +72,7 @@ a {
 	/* outline: 2px dashed palegreen; */
 }
 
-.link {
+/* .link {
 	text-decoration: none;
 	color: inherit;
 }
@@ -78,7 +80,7 @@ a {
 	list-style: none;
 	margin: 0;
 	padding: 0;
-}
+} */
 
 .visually-hidden {
 	position: absolute;
@@ -276,36 +278,18 @@ header {
 	padding-bottom: 0;
 }
 
-.feature-item::before {
-	content: "";
-	display: block;
+.feature-icon {
+	display: flex;
 
 	height: 112px;
 	padding: 24px 100px;
 	margin-bottom: 8px;
 
 	border-radius: 4px;
-
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
 	background-color: var(--secondary-color);
 	background-size: 64px;
 }
 
-.feature-item.icon-antenna::before {
-	background-image: url(../images/antenna.svg);
-}
-
-.feature-item.icon-clock::before {
-	background-image: url(../images/clock.svg);
-}
-.feature-item.icon-diagram::before {
-	background-image: url(../images/diagram.svg);
-}
-.feature-item.icon-austronaut::before {
-	background-image: url(../images/astronaut.svg);
-}
 /* WORK */
 
 .work {
@@ -362,29 +346,17 @@ header {
 }
 .social-link {
 	display: flex;
-	padding: 20px;
+	height: 40px;
+	width: 40px;
+	padding: 12px;
 	border-radius: 50%;
 
 	background-color: var(--accent-color);
-	background-size: 16px;
-	background-position: center;
-	background-repeat: no-repeat;
-}
-.social-icon {
-	fill: var(--bg-color);
 }
 
-/* .social-link.inst {
-	background-image: url(../images/inst.svg);
-} */
-.social-link.twt {
-	background-image: url(../images/twitter.svg);
-}
-.social-link.fb {
-	background-image: url(../images/fb.svg);
-}
-.social-link.in {
-	background-image: url(../images/in.svg);
+.social-link:hover,
+.social-link:focus {
+	background-color: var(--btn-hover-color);
 }
 
 /* CUSTUMERS */
@@ -399,9 +371,6 @@ header {
 	border: 1px solid #8e8f99;
 	border-radius: 4px;
 	fill: #8e8f99;
-}
-
-.custumer-svg {
 }
 
 .custumers-link:hover {
@@ -440,6 +409,15 @@ header {
 	gap: 120px;
 }
 
+.social-link.footer-social {
+	padding: 8px;
+	background-color: rgba(255, 255, 255, 0.1);
+}
+.social-link.footer-social:hover,
+.social-link.footer-social:focus {
+	background-color: var(--sechover-color);
+}
+
 /* PORTFOLIO PAGE */
 /* FILTERS */
 .filter-btn {
@@ -455,7 +433,7 @@ header {
 	cursor: pointer;
 
 	padding: 12px 24px;
-	border: 1px solid #e7e9fc;
+	border: 1px solid var(--secondary-txt-color);
 	border-radius: 4px;
 }
 
@@ -463,6 +441,8 @@ header {
 .filter-btn:focus {
 	color: #ffffff;
 	background: var(--accent-color);
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+	border: 1px solid var(--accent-color);
 }
 
 .filter-btn:active {
