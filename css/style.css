@@ -409,10 +409,15 @@ header {
 	gap: 120px;
 }
 
+.footer-right > .social-list {
+	gap: 16px;
+}
+
 .social-link.footer-social {
 	padding: 8px;
 	background-color: rgba(255, 255, 255, 0.1);
 }
+
 .social-link.footer-social:hover,
 .social-link.footer-social:focus {
 	background-color: var(--sechover-color);
