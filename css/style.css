@@ -373,7 +373,8 @@ header {
 	fill: #8e8f99;
 }
 
-.custumers-link:hover {
+.custumers-link:hover,
+.custumers-link:focus {
 	fill: var(--accent-color);
 	border-color: var(--accent-color);
 }
