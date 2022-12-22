@@ -189,7 +189,7 @@ header {
 .hero {
 	text-align: center;
 	padding: 192px 0;
-	height: 603px;
+	height: 600px;
 	max-width: 1440px;
 	background-color: var(--title-text-color);
 	margin-left: auto;
